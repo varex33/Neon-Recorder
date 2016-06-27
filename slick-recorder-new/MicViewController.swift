@@ -16,16 +16,15 @@ protocol PlayerDelegate : class {
 
 class MicViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate, EZMicrophoneDelegate,EZRecorderDelegate, EZAudioPlayerDelegate {
     
-//    var wave: WaveForm = WaveForm()
     
-    @IBOutlet weak var btnResumeRecording: UIButton!
+//    @IBOutlet weak var btnResumeRecording: UIButton!
     @IBOutlet weak var stopButton: UIButton!
-    @IBOutlet weak var btnPause: UIButton!
+ //   @IBOutlet weak var btnPause: UIButton!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var initialTimeLabel: UILabel!
     @IBOutlet weak var buttonClose: UIButton!
-    @IBOutlet weak var buttonFinish: UIButton!
+   // @IBOutlet weak var buttonFinish: UIButton!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var matrixHolder: UIImageView!
     @IBOutlet weak var greenNeon: UIButton!
@@ -69,9 +68,10 @@ class MicViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlaye
     }
     
     @IBAction func startRecording(sender: UIButton) {
-        btnResumeRecording.hidden = true
+     //   btnResumeRecording.hidden = true
+        stopButton.hidden = false
         buttonClose.hidden = true
-        buttonFinish.hidden = false
+       // buttonFinish.hidden = false
      //   readyLabel.hidden = true
         dateLabel.hidden = false
         timeLabel.hidden = false
@@ -120,7 +120,8 @@ class MicViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlaye
         initialTimeLabel.hidden = true
         timeLabel.hidden = false
         recordButton.hidden = true
-        btnPause.hidden = false
+      //  btnPause.hidden = false
+        
 
         
     }
@@ -254,48 +255,23 @@ class MicViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlaye
         
     }
     
-    
-    @IBAction func finishRecording(sender: UIButton) {
-        if recording == true || btnResumeRecording.hidden == false{
+    @IBAction func stopRecording(sender: UIButton) {
+        if recording == true || stopButton.hidden == false{
             recorder.stop()
             microphone.stopFetchingAudio()
             closeAudioSession()
             self.dismissViewControllerAnimated(true, completion: nil)
         }
-
         
     }
-    
-    @IBAction func stopRecording(sender: UIButton) {
-        if recording{
-            recorder.stop()
-            microphone.stopFetchingAudio()
-            let session = AVAudioSession.sharedInstance()
-            do{
-                try session.setActive(false)
-                btnResumeRecording.enabled = true
-                timer.invalidate()
-            }
-            catch let error as NSError{
-                print("unable to deactive session")
-                print(error.localizedDescription)
-            }
-        }
-        else{
-             self.dismissViewControllerAnimated(true, completion: nil)
-        }
-
-//        recButton.enabled = true
-//        recButton.hidden = false
-    }
-    
+/*
     @IBAction func pauseRecording(sender: UIButton) {
         recorder.pause()
         blinkPauseFlag = true
         recording = false
         print("recording paused")
-        btnPause.hidden = true
-        btnResumeRecording.hidden = false
+       // btnPause.hidden = true
+       // btnResumeRecording.hidden = false
         microphone.stopFetchingAudio()
         matrixHolder.stopAnimating()
     }
@@ -310,6 +286,7 @@ class MicViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlaye
         microphone.startFetchingAudio()
         print("recording after pause")
     }
+*/
     
     // MARK: - Navigation
     /*
