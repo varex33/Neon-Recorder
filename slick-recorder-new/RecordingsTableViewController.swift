@@ -33,7 +33,7 @@ class RecordingsTableViewController: UITableViewController, UITabBarControllerDe
 
                 /** RECORDING FILE NAME **/
                 recording.audioTitle = name
-                print("here \(name)")
+                //print("here \(name)")
                 /*** GET RECORDING DATE ***/
                 let fileAttributes: [String: AnyObject] = (try NSFileManager.defaultManager().attributesOfItemAtPath("\(audioDir)/\(recording.audioTitle)"))
                 recording.recordingDate = fileAttributes[NSFileCreationDate]! as! NSDate
@@ -263,7 +263,7 @@ class RecordingsTableViewController: UITableViewController, UITabBarControllerDe
         cell.layer.addSublayer(border)
         */
         cell.layer.masksToBounds = true
-        cell.layer.borderColor = UIColor( white: 1.0, alpha: 0.5).CGColor
+        cell.layer.borderColor = UIColor(red: 0.5, green: 0.9, blue: 0.3, alpha: 0.8).CGColor // Green Table border
         cell.layer.borderWidth = 0.5
 
         return cell

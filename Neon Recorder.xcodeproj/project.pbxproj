@@ -39,6 +39,7 @@
 		70720AFC1D18639E00DB985A /* matrix29.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70720ADD1D18639E00DB985A /* matrix29.jpg */; };
 		70720AFD1D18639E00DB985A /* matrix30.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70720ADE1D18639E00DB985A /* matrix30.jpg */; };
 		70720AFE1D18639E00DB985A /* matrix31.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70720ADF1D18639E00DB985A /* matrix31.jpg */; };
+		70E0F13A1D24354B0024ED79 /* simple-drum-beat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70E0F1391D24354B0024ED79 /* simple-drum-beat.wav */; };
 		789004EC1C2206BE00A43D25 /* MicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789004EB1C2206BE00A43D25 /* MicViewController.swift */; };
 		78ADC43B1C0A53ED0042DCB7 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ADC43A1C0A53ED0042DCB7 /* RecordedAudio.swift */; };
 		78C737081BF50D6B00C66C7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C737071BF50D6B00C66C7D /* AppDelegate.swift */; };
@@ -104,6 +105,7 @@
 		70720ADD1D18639E00DB985A /* matrix29.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = matrix29.jpg; path = "matrix-images/matrix29.jpg"; sourceTree = "<group>"; };
 		70720ADE1D18639E00DB985A /* matrix30.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = matrix30.jpg; path = "matrix-images/matrix30.jpg"; sourceTree = "<group>"; };
 		70720ADF1D18639E00DB985A /* matrix31.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = matrix31.jpg; path = "matrix-images/matrix31.jpg"; sourceTree = "<group>"; };
+		70E0F1391D24354B0024ED79 /* simple-drum-beat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "simple-drum-beat.wav"; sourceTree = "<group>"; };
 		789004EB1C2206BE00A43D25 /* MicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicViewController.swift; sourceTree = "<group>"; };
 		78ADC43A1C0A53ED0042DCB7 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 		78C737041BF50D6B00C66C7D /* Neon Recorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neon Recorder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +233,7 @@
 				78C7370B1BF50D6B00C66C7D /* Main.storyboard */,
 				78C7373D1BF6F4ED00C66C7D /* Settings.swift */,
 				78C7373B1BF6E26900C66C7D /* PlayRecordingViewController.swift */,
+				70E0F1391D24354B0024ED79 /* simple-drum-beat.wav */,
 				78C737101BF50D6B00C66C7D /* LaunchScreen.storyboard */,
 				78CDCEA21C5AC6CD00D9E2B8 /* Assets.xcassets */,
 				708ACF0F1D04BD3500E23F9F /* matrix-images */,
@@ -345,7 +348,7 @@
 				TargetAttributes = {
 					78C737031BF50D6B00C66C7D = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = HPYQC8VJZZ;
+						DevelopmentTeam = 6CYER6TQ95;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -402,6 +405,7 @@
 				70720AF11D18639E00DB985A /* matrix18.jpg in Resources */,
 				70720AEE1D18639E00DB985A /* matrix15.jpg in Resources */,
 				70720AFB1D18639E00DB985A /* matrix28.jpg in Resources */,
+				70E0F13A1D24354B0024ED79 /* simple-drum-beat.wav in Resources */,
 				70720AE81D18639E00DB985A /* matrix9.jpg in Resources */,
 				70720AE91D18639E00DB985A /* matrix10.jpg in Resources */,
 				70720AEF1D18639E00DB985A /* matrix16.jpg in Resources */,
@@ -647,7 +651,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "slick-recorder-new/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "varex.inctest.slick-recorder-new";
+				PRODUCT_BUNDLE_IDENTIFIER = "samj.neon-recorder";
 				PRODUCT_NAME = "Neon Recorder";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "slick-recorder-new/slick-recorder-new-Bridging-Header.h";
@@ -665,7 +669,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "slick-recorder-new/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "varex.inctest.slick-recorder-new";
+				PRODUCT_BUNDLE_IDENTIFIER = "samj.neon-recorder";
 				PRODUCT_NAME = "Neon Recorder";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "slick-recorder-new/slick-recorder-new-Bridging-Header.h";

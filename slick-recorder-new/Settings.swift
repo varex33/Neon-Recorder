@@ -9,12 +9,19 @@
 import Foundation
 import UIKit
 import SwiftyDropbox
+import AVFoundation
 
 class Settings: UIViewController{
     
     @IBOutlet weak var dropboxSwitch: UISwitch!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var dropboxEnabled: UILabel!
+    @IBOutlet weak var aboutLabel: UILabel!
+    @IBOutlet weak var showAboutButton: UIButton!
+    @IBOutlet weak var hideAboutButton: UIButton!
+    var matrixSong = NSBundle.mainBundle().pathForResource("simple-drum-beat", ofType: "wav")
+    //var matrixSong = NSBundle.mainBundle().pathForResource("matrix-about", ofType: "mp3")
+    var player = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,4 +102,45 @@ class Settings: UIViewController{
             print("User is unlnked from dropbox")
         }
     }
+    
+    @IBAction func showAbout(sender: UIButton) {
+        aboutLabel.hidden = false
+        showAboutButton.hidden = true
+        hideAboutButton.hidden = false
+        let songUrl = NSURL(fileURLWithPath: matrixSong!)
+        //print(songUrl)
+        let session = AVAudioSession.sharedInstance()
+        
+        do{
+            try session.setCategory(AVAudioSessionCategoryPlayback)
+        }
+        catch{
+            print("unable to set session category")
+        }
+        do{
+            try player = AVAudioPlayer(contentsOfURL: songUrl)
+            player.play()
+        }
+        catch{
+            print("unable to play")
+        }
+        
+    }
+    
+    @IBAction func hideAbout(sender: UIButton){
+        aboutLabel.hidden = true
+        showAboutButton.hidden = false
+        hideAboutButton.hidden = true
+        let session = AVAudioSession.sharedInstance()
+        do{
+            try session.setActive(false)
+            }
+        catch{
+            print("unable to deactivate session")
+        }
+
+        player.stop()
+        print("matrix song stopped")
+    }
+    
 }
