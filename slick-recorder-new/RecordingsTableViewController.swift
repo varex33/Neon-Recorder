@@ -263,7 +263,7 @@ class RecordingsTableViewController: UITableViewController, UITabBarControllerDe
         cell.layer.addSublayer(border)
         */
         cell.layer.masksToBounds = true
-        cell.layer.borderColor = UIColor(red: 0.5, green: 0.9, blue: 0.3, alpha: 0.8).CGColor // Green Table border
+        cell.layer.borderColor = UIColor(red: 0, green: 0.6, blue: 0.3, alpha: 0.9).CGColor // Green Table border
         cell.layer.borderWidth = 0.5
 
         return cell

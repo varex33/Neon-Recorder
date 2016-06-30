@@ -16,7 +16,7 @@ class ViewController: UITabBarController, UITabBarControllerDelegate{
         UIApplication.sharedApplication().idleTimerDisabled = true // Prevent App from going to sleep
                 
         UITabBar.appearance().tintColor = UIColor.whiteColor() // Custom color for tabbar icons
-        UINavigationBar.appearance().tintColor = UIColor(red: 0, green: 0.6, blue: 0.3, alpha: 0.9)
+        UINavigationBar.appearance().tintColor = UIColor(red: 0, green: 0.6, blue: 0.3, alpha: 0.9) // Green color for navigation arrows
 //        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.redColor()], forState: UIControlState.Normal)
         
         /// PRESENT MICVIEWCONTROLLER AS FIRST SCREEN WHEN APP IS OPENED FOR FIRST TIME

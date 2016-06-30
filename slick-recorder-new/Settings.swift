@@ -19,7 +19,9 @@ class Settings: UIViewController{
     @IBOutlet weak var aboutLabel: UILabel!
     @IBOutlet weak var showAboutButton: UIButton!
     @IBOutlet weak var hideAboutButton: UIButton!
-    var matrixSong = NSBundle.mainBundle().pathForResource("simple-drum-beat", ofType: "wav")
+//    var matrixSong = NSBundle.mainBundle().pathForResource("simple-drum-beat", ofType: "wav")
+    var matrixSong = NSBundle.mainBundle().pathForResource("matrix-about", ofType: "mp3")
+
     //var matrixSong = NSBundle.mainBundle().pathForResource("matrix-about", ofType: "mp3")
     var player = AVAudioPlayer()
     
@@ -131,6 +133,9 @@ class Settings: UIViewController{
         aboutLabel.hidden = true
         showAboutButton.hidden = false
         hideAboutButton.hidden = true
+        player.stop()
+        print("matrix song stopped")
+
         let session = AVAudioSession.sharedInstance()
         do{
             try session.setActive(false)
@@ -139,8 +144,6 @@ class Settings: UIViewController{
             print("unable to deactivate session")
         }
 
-        player.stop()
-        print("matrix song stopped")
     }
     
 }
