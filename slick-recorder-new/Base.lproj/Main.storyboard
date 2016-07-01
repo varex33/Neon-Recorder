@@ -197,7 +197,7 @@
             </objects>
             <point key="canvasLocation" x="736" y="2255"/>
         </scene>
-        <!--Recordings-->
+        <!--Settings-->
         <scene sceneID="OME-48-Ofz">
             <objects>
                 <viewController id="ls8-ir-sCF" customClass="Settings" customModule="Neon_Recorder" customModuleProvider="target" sceneMemberID="viewController">
@@ -299,7 +299,7 @@
                             <constraint firstItem="fcG-NC-Czp" firstAttribute="centerX" secondItem="A0W-Iw-gsF" secondAttribute="centerX" id="sUM-P8-lp5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Recordings" id="Vml-8m-jIe"/>
+                    <navigationItem key="navigationItem" title="Settings" id="Vml-8m-jIe"/>
                     <connections>
                         <outlet property="aboutLabel" destination="fcG-NC-Czp" id="rei-uI-qMI"/>
                         <outlet property="dropboxEnabled" destination="7Jy-wL-e4w" id="38L-89-IVC"/>
