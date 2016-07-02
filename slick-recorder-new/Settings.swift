@@ -20,7 +20,7 @@ class Settings: UIViewController{
     @IBOutlet weak var showAboutButton: UIButton!
     @IBOutlet weak var hideAboutButton: UIButton!
 //    var matrixSong = NSBundle.mainBundle().pathForResource("simple-drum-beat", ofType: "wav")
-    var matrixSong = NSBundle.mainBundle().pathForResource("neon-recorder-theme ", ofType: "mp3")
+    var matrixSong = NSBundle.mainBundle().pathForResource("neon-theme-suburbia", ofType: "mp3")
 
     //var matrixSong = NSBundle.mainBundle().pathForResource("matrix-about", ofType: "mp3")
     var player = AVAudioPlayer()
