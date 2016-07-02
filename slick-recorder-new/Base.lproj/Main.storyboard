@@ -393,6 +393,9 @@
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LqA-8k-fTE">
                                 <rect key="frame" x="20" y="231" width="560" height="31"/>
+                                <connections>
+                                    <action selector="progressSlider:" destination="Up4-oM-bz0" eventType="valueChanged" id="BUa-Le-NfS"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UW-NM-4q6">
                                 <rect key="frame" x="22" y="269" width="42" height="21"/>
@@ -418,7 +421,6 @@
                                 <state key="normal" image="forward-white"/>
                                 <connections>
                                     <action selector="fowardButton:" destination="Up4-oM-bz0" eventType="touchUpInside" id="HHC-HY-48V"/>
-                                    <action selector="playSelectedRecording:" destination="Up4-oM-bz0" eventType="touchUpInside" id="08l-ZJ-Ike"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOg-D6-GWQ">
@@ -427,7 +429,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="playSelectedRecording:" destination="Up4-oM-bz0" eventType="touchUpInside" id="F82-UQ-sOr"/>
                                     <action selector="rewindButton:" destination="Up4-oM-bz0" eventType="touchUpInside" id="faj-HT-kRH"/>
                                 </connections>
                             </button>
@@ -443,10 +444,6 @@
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQM-AP-58z">
                                 <rect key="frame" x="62" y="417" width="50" height="50"/>
                                 <state key="normal" image="rewind-arrow"/>
-                                <connections>
-                                    <action selector="playSelectedRecording:" destination="Up4-oM-bz0" eventType="touchUpInside" id="dJJ-ac-U1l"/>
-                                    <action selector="rewindButton:" destination="Up4-oM-bz0" eventType="touchUpInside" id="EDc-3G-Hzq"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRz-ao-tK0">
                                 <rect key="frame" x="279" y="301" width="42" height="21"/>
@@ -471,19 +468,15 @@
                                     <action selector="deleteAudioFile:" destination="Up4-oM-bz0" eventType="touchUpInside" id="UBw-Sj-hP8"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVs-4X-Cef">
+                                <rect key="frame" x="486" y="417" width="50" height="50"/>
+                                <state key="normal" image="forward-arrow"/>
+                            </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBB-TW-2dc">
                                 <rect key="frame" x="275" y="368" width="50" height="50"/>
                                 <state key="normal" image="white-play-50x50@1"/>
                                 <connections>
                                     <action selector="playSelectedRecording:" destination="Up4-oM-bz0" eventType="touchUpInside" id="4Yp-55-zVN"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVs-4X-Cef">
-                                <rect key="frame" x="486" y="417" width="50" height="50"/>
-                                <state key="normal" image="forward-arrow"/>
-                                <connections>
-                                    <action selector="playSelectedRecording:" destination="Up4-oM-bz0" eventType="touchUpInside" id="zg5-sn-732"/>
-                                    <action selector="rewindButton:" destination="Up4-oM-bz0" eventType="touchUpInside" id="UZ7-wL-vmB"/>
                                 </connections>
                             </button>
                         </subviews>

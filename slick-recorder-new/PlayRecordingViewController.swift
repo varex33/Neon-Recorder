@@ -334,6 +334,7 @@ class PlayRecordingViewController: UIViewController,AVAudioPlayerDelegate, EZAud
         
     }
     
+    
     func audioPlayerBeginInterruption(player: AVAudioPlayer) {
         player.stop()
         btnPause.hidden = true
