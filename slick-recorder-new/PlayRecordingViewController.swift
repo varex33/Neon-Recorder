@@ -414,10 +414,29 @@ class PlayRecordingViewController: UIViewController,AVAudioPlayerDelegate, EZAud
      }*/
     
     @IBAction func record(sender: UIButton) {
-        /*
-        if let vc = storyboard?.instantiateViewControllerWithIdentifier("micViewController") as? MicViewController{
-            self.presentViewController(vc, animated: true, completion: nil)
-        }*/
+        if playing == true {
+            player.stop()
+            imageHolder.stopAnimating()
+            print("player stopped")
+            let session = AVAudioSession.sharedInstance()
+            do{
+                try session.setActive(false)
+                updater.invalidate()
+                updater_running = false
+            }
+            catch{
+                print("unable to deactivate session")
+            }
+        }
+        // POPS THE CURRENT VIEW AND (PLAYING RECORDING) SO THE RECORDINGS TABLE BECOME VISIBLE
+        self.navigationController?.popViewControllerAnimated(true)
+        
+        // GETS THE TOP MOST VIEW CONTROLLER OF THE WINDOW HIERARCHY SO WE CAN PRESENT A NEW VIEW
+         let top = UIApplication.sharedApplication().keyWindow?.rootViewController
+        
+        // PRESENT RECORDING VIEW
+         let vc = self.storyboard!.instantiateViewControllerWithIdentifier("micStoryboard") as? MicViewController
+         top?.presentViewController(vc!, animated: true, completion: nil)
     }
     
     
