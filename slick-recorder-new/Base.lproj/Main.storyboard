@@ -433,7 +433,7 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aVw-8Z-Ij7">
-                                <rect key="frame" x="163" y="463" width="274" height="31"/>
+                                <rect key="frame" x="163" y="453" width="274" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="NA6-oj-9NR"/>
                                 </constraints>
@@ -451,14 +451,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynm-Ng-r40">
-                                <rect key="frame" x="22" y="512" width="25" height="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynm-Ng-r40">
+                                <rect key="frame" x="40" y="508" width="25" height="25"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
                                 <state key="normal" image="uploadButton25x25">
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="uploadToCloud:" destination="Up4-oM-bz0" eventType="touchUpInside" id="SG7-Ks-caG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afP-eG-Pbj">
+                                <rect key="frame" x="537" y="510" width="25" height="25"/>
+                                <state key="normal" image="white-trash25x25@1"/>
+                                <connections>
+                                    <action selector="deleteAudioFile:" destination="Up4-oM-bz0" eventType="touchUpInside" id="UBw-Sj-hP8"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVs-4X-Cef">
@@ -472,11 +479,11 @@
                                     <action selector="playSelectedRecording:" destination="Up4-oM-bz0" eventType="touchUpInside" id="4Yp-55-zVN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afP-eG-Pbj">
-                                <rect key="frame" x="555" y="512" width="25" height="25"/>
-                                <state key="normal" image="white-trash25x25@1"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AY1-Pc-RIU">
+                                <rect key="frame" x="275" y="510" width="49" height="30"/>
+                                <state key="normal" title="Record"/>
                                 <connections>
-                                    <action selector="deleteAudioFile:" destination="Up4-oM-bz0" eventType="touchUpInside" id="UBw-Sj-hP8"/>
+                                    <action selector="record:" destination="Up4-oM-bz0" eventType="touchUpInside" id="PD3-Q9-Re8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -488,19 +495,21 @@
                             <constraint firstItem="HBB-TW-2dc" firstAttribute="top" secondItem="BRz-ao-tK0" secondAttribute="bottom" constant="46" id="9wG-lZ-QGj"/>
                             <constraint firstItem="eX8-wl-op9" firstAttribute="top" secondItem="TIY-B6-wDw" secondAttribute="topMargin" id="Cwb-vm-0qR"/>
                             <constraint firstItem="BRz-ao-tK0" firstAttribute="centerX" secondItem="TIY-B6-wDw" secondAttribute="centerX" id="Gz4-Xe-lIC"/>
-                            <constraint firstItem="E6N-MO-9Lf" firstAttribute="top" secondItem="afP-eG-Pbj" secondAttribute="bottom" constant="14" id="H9f-lt-Qbl"/>
                             <constraint firstItem="HBB-TW-2dc" firstAttribute="centerX" secondItem="BRz-ao-tK0" secondAttribute="centerX" id="LSa-BL-lbF"/>
+                            <constraint firstItem="AY1-Pc-RIU" firstAttribute="top" secondItem="aVw-8Z-Ij7" secondAttribute="bottom" constant="30" id="M8t-lR-LLE"/>
                             <constraint firstItem="eX8-wl-op9" firstAttribute="leading" secondItem="TIY-B6-wDw" secondAttribute="leadingMargin" constant="-20" id="Mdl-xl-SuD"/>
                             <constraint firstItem="BRz-ao-tK0" firstAttribute="top" secondItem="LqA-8k-fTE" secondAttribute="bottom" constant="40" id="Oyo-sn-5U5"/>
                             <constraint firstItem="6tF-xh-njN" firstAttribute="centerX" secondItem="BRz-ao-tK0" secondAttribute="centerX" id="Qr8-5H-IrS"/>
                             <constraint firstItem="0UW-NM-4q6" firstAttribute="top" secondItem="LqA-8k-fTE" secondAttribute="bottom" constant="8" id="RHE-Il-OGy"/>
                             <constraint firstItem="0UW-NM-4q6" firstAttribute="leading" secondItem="TIY-B6-wDw" secondAttribute="leadingMargin" constant="2" id="SBe-Fh-TWh"/>
-                            <constraint firstItem="afP-eG-Pbj" firstAttribute="trailing" secondItem="TIY-B6-wDw" secondAttribute="trailingMargin" constant="2" id="Unl-zZ-iDa"/>
+                            <constraint firstItem="ynm-Ng-r40" firstAttribute="centerY" secondItem="AY1-Pc-RIU" secondAttribute="centerY" id="SYq-dr-Lph"/>
                             <constraint firstItem="aVw-8Z-Ij7" firstAttribute="centerX" secondItem="6tF-xh-njN" secondAttribute="centerX" id="Vl0-7U-YHn"/>
-                            <constraint firstItem="aVw-8Z-Ij7" firstAttribute="top" secondItem="6tF-xh-njN" secondAttribute="bottom" constant="45" id="WHN-Zb-VaG"/>
+                            <constraint firstItem="aVw-8Z-Ij7" firstAttribute="top" secondItem="6tF-xh-njN" secondAttribute="bottom" constant="35" id="WHN-Zb-VaG"/>
+                            <constraint firstItem="afP-eG-Pbj" firstAttribute="leading" secondItem="AY1-Pc-RIU" secondAttribute="trailing" constant="90" id="YAW-FN-mMt"/>
                             <constraint firstItem="6tF-xh-njN" firstAttribute="leading" secondItem="sOg-D6-GWQ" secondAttribute="trailing" constant="44" id="Yag-Ic-boX"/>
                             <constraint firstAttribute="bottomMargin" secondItem="eX8-wl-op9" secondAttribute="bottom" constant="6" id="YdU-8g-dfD"/>
-                            <constraint firstItem="ynm-Ng-r40" firstAttribute="leading" secondItem="TIY-B6-wDw" secondAttribute="leadingMargin" constant="2" id="Yko-W0-XLG"/>
+                            <constraint firstItem="afP-eG-Pbj" firstAttribute="centerY" secondItem="AY1-Pc-RIU" secondAttribute="centerY" id="ZRH-UV-Paq"/>
+                            <constraint firstItem="AY1-Pc-RIU" firstAttribute="centerX" secondItem="aVw-8Z-Ij7" secondAttribute="centerX" id="ads-Jj-Hq3"/>
                             <constraint firstItem="v5Q-uR-jJx" firstAttribute="top" secondItem="8Ee-BA-BD2" secondAttribute="bottom" id="dCH-AE-pAd"/>
                             <constraint firstItem="sYB-Zi-NHd" firstAttribute="top" secondItem="LqA-8k-fTE" secondAttribute="bottom" constant="8" id="eBe-Wm-Kyi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eX8-wl-op9" secondAttribute="trailing" constant="-20" id="erb-cT-Pc1"/>
@@ -509,8 +518,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="v5Q-uR-jJx" secondAttribute="trailing" constant="-20" id="j0U-WG-g2a"/>
                             <constraint firstItem="mvg-Ql-CA8" firstAttribute="centerY" secondItem="6tF-xh-njN" secondAttribute="centerY" id="j29-HO-Pkd"/>
                             <constraint firstItem="sOg-D6-GWQ" firstAttribute="centerY" secondItem="6tF-xh-njN" secondAttribute="centerY" id="khq-Kh-9ja"/>
-                            <constraint firstItem="E6N-MO-9Lf" firstAttribute="top" secondItem="ynm-Ng-r40" secondAttribute="bottom" constant="14" id="nVS-G3-8ga"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sYB-Zi-NHd" secondAttribute="trailing" constant="2" id="vhF-4U-iZo"/>
+                            <constraint firstItem="AY1-Pc-RIU" firstAttribute="leading" secondItem="ynm-Ng-r40" secondAttribute="trailing" constant="90" id="zME-MA-GC9"/>
                         </constraints>
                     </view>
                     <connections>

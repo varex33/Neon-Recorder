@@ -413,6 +413,14 @@ class PlayRecordingViewController: UIViewController,AVAudioPlayerDelegate, EZAud
      playing = false
      }*/
     
+    @IBAction func record(sender: UIButton) {
+        /*
+        if let vc = storyboard?.instantiateViewControllerWithIdentifier("micViewController") as? MicViewController{
+            self.presentViewController(vc, animated: true, completion: nil)
+        }*/
+    }
+    
+    
     @IBAction func uploadToCloud(sender: UIButton) {
         // Verify user is logged into Dropbox
         if let client = Dropbox.authorizedClient {
