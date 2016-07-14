@@ -40,6 +40,7 @@
 		70720AFD1D18639E00DB985A /* matrix30.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70720ADE1D18639E00DB985A /* matrix30.jpg */; };
 		70720AFE1D18639E00DB985A /* matrix31.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70720ADF1D18639E00DB985A /* matrix31.jpg */; };
 		70AD15701D285C4D00E290E4 /* neon-theme-suburbia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70AD156F1D285C4D00E290E4 /* neon-theme-suburbia.mp3 */; };
+		70AD15721D37FCA900E290E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70AD15711D37FCA900E290E4 /* Assets.xcassets */; };
 		789004EC1C2206BE00A43D25 /* MicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789004EB1C2206BE00A43D25 /* MicViewController.swift */; };
 		78ADC43B1C0A53ED0042DCB7 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ADC43A1C0A53ED0042DCB7 /* RecordedAudio.swift */; };
 		78C737081BF50D6B00C66C7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C737071BF50D6B00C66C7D /* AppDelegate.swift */; };
@@ -53,7 +54,6 @@
 		78C7373A1BF6E14900C66C7D /* RecordingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C737391BF6E14900C66C7D /* RecordingsTableViewController.swift */; };
 		78C7373C1BF6E26900C66C7D /* PlayRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C7373B1BF6E26900C66C7D /* PlayRecordingViewController.swift */; };
 		78C7373E1BF6F4ED00C66C7D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C7373D1BF6F4ED00C66C7D /* Settings.swift */; };
-		78CDCEA31C5AC6CD00D9E2B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78CDCEA21C5AC6CD00D9E2B8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +106,7 @@
 		70720ADE1D18639E00DB985A /* matrix30.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = matrix30.jpg; path = "matrix-images/matrix30.jpg"; sourceTree = "<group>"; };
 		70720ADF1D18639E00DB985A /* matrix31.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = matrix31.jpg; path = "matrix-images/matrix31.jpg"; sourceTree = "<group>"; };
 		70AD156F1D285C4D00E290E4 /* neon-theme-suburbia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "neon-theme-suburbia.mp3"; sourceTree = "<group>"; };
+		70AD15711D37FCA900E290E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		789004EB1C2206BE00A43D25 /* MicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicViewController.swift; sourceTree = "<group>"; };
 		78ADC43A1C0A53ED0042DCB7 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 		78C737041BF50D6B00C66C7D /* Neon Recorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neon Recorder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,7 +126,6 @@
 		78C737391BF6E14900C66C7D /* RecordingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingsTableViewController.swift; sourceTree = "<group>"; };
 		78C7373B1BF6E26900C66C7D /* PlayRecordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayRecordingViewController.swift; sourceTree = "<group>"; };
 		78C7373D1BF6F4ED00C66C7D /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		78CDCEA21C5AC6CD00D9E2B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78E6C4571C4EBE3200140684 /* slick-recorder-new-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "slick-recorder-new-Bridging-Header.h"; sourceTree = "<group>"; };
 		826E23FF9C405620BF6DD01F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		99CA68E9E337DECDAB5175E6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,7 +235,7 @@
 				78C7373B1BF6E26900C66C7D /* PlayRecordingViewController.swift */,
 				70AD156F1D285C4D00E290E4 /* neon-theme-suburbia.mp3 */,
 				78C737101BF50D6B00C66C7D /* LaunchScreen.storyboard */,
-				78CDCEA21C5AC6CD00D9E2B8 /* Assets.xcassets */,
+				70AD15711D37FCA900E290E4 /* Assets.xcassets */,
 				708ACF0F1D04BD3500E23F9F /* matrix-images */,
 				78C737131BF50D6B00C66C7D /* Info.plist */,
 			);
@@ -394,6 +394,7 @@
 				70720AE01D18639E00DB985A /* matrix1.jpg in Resources */,
 				70AD15701D285C4D00E290E4 /* neon-theme-suburbia.mp3 in Resources */,
 				70720AFE1D18639E00DB985A /* matrix31.jpg in Resources */,
+				70AD15721D37FCA900E290E4 /* Assets.xcassets in Resources */,
 				70720AF21D18639E00DB985A /* matrix19.jpg in Resources */,
 				70720AF41D18639E00DB985A /* matrix21.jpg in Resources */,
 				70720AED1D18639E00DB985A /* matrix14.jpg in Resources */,
@@ -422,7 +423,6 @@
 				70720AE41D18639E00DB985A /* matrix5.jpg in Resources */,
 				70720AFC1D18639E00DB985A /* matrix29.jpg in Resources */,
 				70720AF01D18639E00DB985A /* matrix17.jpg in Resources */,
-				78CDCEA31C5AC6CD00D9E2B8 /* Assets.xcassets in Resources */,
 				70720AE21D18639E00DB985A /* matrix3.jpg in Resources */,
 				78C7370D1BF50D6B00C66C7D /* Main.storyboard in Resources */,
 			);
