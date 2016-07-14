@@ -117,9 +117,13 @@ class RecordingsTableViewController: UITableViewController, UITabBarControllerDe
 
         /*** Display Name of Audio files by counting the number of recordings **/
         let totalRecordings = recordings.count
-        cell.textLabel?.text = "My Recording \(totalRecordings - indexPath.row )"
-//          cell.textLabel?.text = recordings[indexPath.row].recordingGivenTitle
+        let tempName = "My Recording \(totalRecordings - indexPath.row )"
         
+        // Show Temporal Name as recoding title in Tableview
+        cell.textLabel?.text = tempName
+        
+        
+    //    recordings[indexPath.row].tempName = tempName // Save temporal name 
         
         /*** Show File Date time Information as Row Detail ****/
         let audioName = recordings[indexPath.row].audioTitle

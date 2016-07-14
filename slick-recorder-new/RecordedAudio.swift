@@ -11,11 +11,9 @@ import Foundation
 class RecordedAudio {
     var audioUrl: NSURL!
     var audioTitle: String!
+    var tempName: String!
     var recordingDate: NSDate!
     var recordingGivenTitle: String!
 //    var recordingDirectory: NSString!
-        func test(){
-        print("test")
-    }
 
 }

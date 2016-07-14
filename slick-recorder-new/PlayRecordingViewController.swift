@@ -54,6 +54,8 @@ class PlayRecordingViewController: UIViewController,AVAudioPlayerDelegate, EZAud
         let fullName = NSURL(fileURLWithPath: dir+"/"+recordedAudio.audioTitle)
         self.fileName.text = recordedAudio.audioTitle //  Display File Name below slider
         
+//        self.fileName.text = recordedAudio.tempName //  Attemp to Display Temporal Name instead of audioTitle
+
         /** DISPLAY AND EDIT AUDIO FILE NAME (postponed)**/
         /*
         renameFile.delegate = self
