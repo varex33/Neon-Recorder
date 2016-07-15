@@ -255,7 +255,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tW-HV-li4">
-                                <rect key="frame" x="200" y="360" width="200" height="66"/>
+                                <rect key="frame" x="200" y="342" width="200" height="66"/>
                                 <state key="normal" image="show-about">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -263,17 +263,8 @@
                                     <action selector="showAbout:" destination="ls8-ir-sCF" eventType="touchUpInside" id="MOc-qA-KTB"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neon is a free recorder developed by Sam J, more info at samj.org" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcG-NC-Czp">
-                                <rect key="frame" x="232" y="441" width="136" height="72"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="136" id="s12-7o-7hP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMk-Iz-LPr">
-                                <rect key="frame" x="200" y="360" width="200" height="66"/>
+                                <rect key="frame" x="200" y="342" width="200" height="66"/>
                                 <state key="normal" image="hide-about">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -281,6 +272,16 @@
                                     <action selector="hideAbout:" destination="ls8-ir-sCF" eventType="touchUpInside" id="q3g-WZ-YOn"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcG-NC-Czp">
+                                <rect key="frame" x="-178" y="423" width="956" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="s12-7o-7hP"/>
+                                </constraints>
+                                <string key="text">Neon captures the real world sounds and coverts them into cyber bits. Developed by Sam Argote. More info at http://samj.org/neonrecorder</string>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
